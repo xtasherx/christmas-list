@@ -8,7 +8,8 @@ body,
   display: flex;
   flex-direction: column;
 }
-.ul-div {
+.ul-div,
+.ipad-div {
   display: flex;
 }
 body {
@@ -28,6 +29,14 @@ ul {
   list-style: none;
   padding-left: 0px;
   margin: 30px;
+}
+
+li {
+  margin: 10px;
+}
+
+span {
+  font-weight: bold;
 }
 
 button {
@@ -93,15 +102,12 @@ button:hover {
   align-items: center;
   justify-content: center;
   margin: 10px;
+  padding: 20px;
   width: 90%;
-  margin: 10%;
 }
 
-.intro h1 {
-  border-bottom: solid 1px #ef6c00;
-}
 .list-div {
-  margin: 10px;
+  margin: 0px 10px 0px 10px;
   padding: 20px;
   width: 90%;
 }
@@ -121,4 +127,15 @@ button:hover {
 .pres2-div {
   align-items: center;
   justify-content: center;
+}
+
+.ipad-div {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.redRider {
+  color: #ef6c00;
+  font-size: 2em;
+  border-bottom: solid 1px black;
 }
