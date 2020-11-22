@@ -12,6 +12,25 @@ body,
 .ipad-div {
   display: flex;
 }
+
+.main,
+.header,
+.intro,
+.pres-div,
+.pres2-div,
+.ipad-div {
+  align-items: center;
+  justify-content: center;
+}
+
+.pres-div,
+.intro,
+.button {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -37,11 +56,11 @@ li {
 
 span {
   font-weight: bold;
+  color: #e65100;
 }
 
 button {
   background-color: #ef6c00;
-  box-shadow: 0 4px 8px 0 rgba(31, 30, 30, 0.2);
   border: solid 1px #ef6c00;
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
@@ -60,8 +79,6 @@ button:hover {
 }
 
 .header {
-  align-items: center;
-  justify-content: center;
   margin: 0px;
   width: 100vw;
   height: 500px;
@@ -91,16 +108,7 @@ button:hover {
   border-top: 2px solid #ef6c00;
 }
 
-.main {
-  align-items: center;
-}
-
 .intro {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
-  align-items: center;
-  justify-content: center;
   margin: 10px;
   padding: 20px;
   width: 90%;
@@ -113,29 +121,29 @@ button:hover {
 }
 
 .pres-div {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
   display: flex;
   margin: 10px;
   padding: 10px;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.pres2-div {
-  align-items: center;
-  justify-content: center;
 }
 
 .ipad-div {
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 .redRider {
   color: #ef6c00;
   font-size: 2em;
-  border-bottom: solid 1px black;
+}
+#rrdiv {
+  width: 99%;
+}
+
+@media (min-width: 900px) {
+  .list-div {
+    flex-direction: row;
+  }
+
+  .pres-div {
+    width: 33%;
+  }
 }
